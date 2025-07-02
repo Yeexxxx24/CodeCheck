@@ -1,0 +1,57 @@
+// {
+//   "extends": "@vue/tsconfig/tsconfig.dom.json",
+//   "compilerOptions": {
+//     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+//     /* Linting */
+//     "strict": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "noUncheckedSideEffectImports": true
+//   },
+//   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+// }
+// {
+//   "extends": "@vue/tsconfig/tsconfig.dom.json",
+//   "compilerOptions": {
+//     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+//     /* Linting */
+//     "strict": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "noUncheckedSideEffectImports": true,
+
+//     /* 👇👇 你要添加的别名配置 👇👇 */
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["src/*"]
+//     }
+//   },
+//   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+// }
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* 👇👇 添加的别名配置 👇👇 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* 👇👇 添加的类型声明 👇👇 */
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/router/upload.js"]
+}
